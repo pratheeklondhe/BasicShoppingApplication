@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOMEPAGE</title>
+ <meta charset="utf-8">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="HomepageCss.css">
+
+</head>
+<body>
+
+<h1 align="center"><b>WELCOME TO SHOPCART.COM</b></h1>
+
+
+
+
+<div class="container-fluid">
+
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" align="center">
+	<b>LOGIN</b><br>
+  <!-- Trigger the modal with a button -->
+
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#AdminLoginModal">Admin Login</button> |
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#UserLoginModal">User Login</button> 
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+
+<!-- Modal ADMIN-->
+  <div class="modal fade" id="AdminLoginModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal ADMIN content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" align="center">ADMIN LOGIN</h4>
+        </div>
+        <div class="modal-body" align="center">
+	<form action="VerifyAdmin.java">
+	<table class="table">
+	<tr><th>
+	User Id:<span>*</span> </th><th><input type="text" name="AdminUserId" placeholder="Enter User ID" autofocus required="required"></th></tr><br><br><br><br><tr><th>
+	Password:<span>*</span></th> <th><input type="text" name="AdminPassword" placeholder="Enter Password" required="required"></th></tr><br>
+	</table>
+	<div align="center" > <input type="submit" name="LOGIN"></div>
+	</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+<!-- Modal USER-->
+  <div class="modal fade" id="UserLoginModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal USER content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" align="center">USER LOGIN</h4>
+        </div>
+        <div class="modal-body" align="center">
+	<form action="VerifyUser.java">
+	<table class="table">
+	<tr><th>
+	User Id:<span>*</span> </th><th><input type="text" name="UserUserId" placeholder="Enter User ID" autofocus required="required" ></th></tr><br><br><br><br><tr><th>
+	Password:<span>*</span></th> <th><input type="text" name="UserPassword" placeholder="Enter Password" required="required"></th></tr><br>
+	</table>
+	<div align="center"> <input type="submit" name="LOGIN"></div>
+	</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+   </div>
+
+
+
+  </div>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
